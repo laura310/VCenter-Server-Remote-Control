@@ -8,7 +8,6 @@ import com.vmware.vim25.*;
 import com.vmware.vim25.mo.*;
 
 /**
- * CMPE281_HW2_Xiaoyu Zhou_038
  * Java-based program to interact with CMPE vCenter server.
  * 
  * @author laurajoe
@@ -65,6 +64,7 @@ public class HelloVM {
 				System.out.println("vm vname on				power on vname \n");
 				System.out.println("vm vname off				power off vname \n");
 			}
+			
 			//command "host": enumerate all hosts
 			else if(input.equals("host")) {
 				int i = 0;
@@ -73,6 +73,7 @@ public class HelloVM {
 					System.out.println("host[" + (i++) + "]: Name = " + host.getName());	
 				}				
 			}
+			
 			//command "vm": enumerate all virtual machines
 			else if(input.equals("vm")) {
 				int i = 0;
@@ -267,6 +268,6 @@ public class HelloVM {
 			return vm;
 		}
 		
-		//should log out here!!!
+		//should log out here
 		
 }
